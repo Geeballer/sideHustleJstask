@@ -7,7 +7,7 @@ function salaryX() {
         extraH = 0;
     }
 //EQUATION
-    var total = (wHours * 1000) + (extraH * 200);
+    var total = (wHours * 1000) + (extraH * 1200);
 //VALIDATE INPUT
     if(document.form.hours.selectedIndex == ""){
         alert('Please choose a value')
