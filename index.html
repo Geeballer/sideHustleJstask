@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sideHustle Salary Calculator</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    
+    <div class="container">
+        
+
+        <form name="form" action="#">
+
+            <h2 class="header">Staff Salary Calculator</h2>
+
+            <h2 class="header work">working Hours</h2>
+
+            <p class="workHour">
+                Choose hour(s) worked <br>
+                <select name="hours" id="workHour">
+                    <option value="0" disabled selected>--Choose a value--</option>
+                    <option value="1">1 Hour</option>
+                    <option value="2">2 Hours</option>
+                    <option value="3">3 Hours</option>
+                    <option value="4">4 Hours</option>
+                </select>
+            </p>
+
+            <p class="extraWorkHour">
+                Enter extra hour(s) worked <br>
+                <input type="number" id="extraWorkHour">
+            </p>
+            
+            <input type="button" class="calculate" id="calculate" onclick="salaryX()" value="Calculate">
+            <h2 class="header salaryText" id="salaryText">Salary</h2>
+
+            <p class="amount" id="amount"> ₦ <span id="cash" >0</span></p>
+
+        </form>
+
+    </div>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
